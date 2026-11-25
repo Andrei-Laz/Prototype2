@@ -9,10 +9,14 @@ public class PlayerController : MonoBehaviour
     public float speed = 15;
 
     public float xRange = 10;
+
+    public GameObject projectilePrefab;
+    public InputAction fireAction;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         moveAction.Enable();
+        fireAction.Enable();
     }
 
     // Update is called once per frame
@@ -31,5 +35,10 @@ public class PlayerController : MonoBehaviour
         moveInput = moveAction.ReadValue<Vector2>();
         
         transform.Translate(Vector3.right * moveInput * speed * Time.deltaTime);
+
+        if (fireAction.triggered)
+        {
+            Instantiate(projectilePrefab, transform.position, transform.rotation);
+        }
     }
 }
