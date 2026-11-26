@@ -721,9 +721,18 @@ MonoBehaviour:
     m_Id: 10cd28fe-03a9-4303-be4d-3591f85e1edd
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 6ec4a942-4fad-4a3e-9856-e63cd9d4e209
+      m_Path: <Keyboard>/f
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Spawn
+      m_Flags: 0
     m_Flags: 0
     m_Priority: 0
+  animalIndex: 0
 --- !u!4 &1015463087
 Transform:
   m_ObjectHideFlags: 0
