@@ -227,7 +227,7 @@ MonoBehaviour:
     m_Flags: 0
     m_Priority: 0
   moveInput: {x: 0, y: 0}
-  speed: 15
+  speed: 20
   xRange: 15
   projectilePrefab: {fileID: 1436343607889695441, guid: fcd9a6dafee827d77a082e8b9c478dde, type: 3}
   fireAction:

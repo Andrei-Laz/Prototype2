@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4247845252321753604}
   - component: {fileID: 7060299968362260235}
   - component: {fileID: 6975376891744028884}
+  - component: {fileID: 2882281629066870050}
+  - component: {fileID: 8664810447446351751}
   m_Layer: 0
   m_Name: Dog_BorderCollie_01
   m_TagString: Untagged
@@ -105,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2c0003bdcc764e2387d44e083072e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 30
+  speed: 20
 --- !u!114 &6975376891744028884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +120,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c74c66067449b985de72955cf274b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &2882281629066870050
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70464809919934036}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.117289014, y: 0.21580414, z: 0.27268928}
+  m_Center: {x: 0.0017960469, y: 0.10099906, z: 0.02845547}
+--- !u!114 &8664810447446351751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70464809919934036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1e08d7da9e42eb8c58d31b9b143cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &168867604012434772
 GameObject:
   m_ObjectHideFlags: 0
